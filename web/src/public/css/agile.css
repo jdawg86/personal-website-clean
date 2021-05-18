@@ -1,0 +1,158 @@
+:root {
+  --primary-color: #006400;
+  --accent-color: rgba(231, 109, 90, 1);
+  --accent-color-dark: rgba(71, 88, 133, 1);
+  --dark-color: rgb(0, 192, 109);
+  --medium-color: #bbb;
+  --light-color: rgb(0, 175, 166);
+  --page-color: rgb(24, 24, 27);
+  --soft-color: rgba(221, 214, 212, 1);
+  --margin-xxl: 3rem;
+  --margin-xl: 2rem;
+  --margin-lg: 1rem;
+  --margin-med: 0.66rem;
+  --margin-sm: 0.33rem;
+  --base-font-size: 16pt;
+  --border-radius: 6px;
+  --rounded-radius: 4rem;
+  --padding-xxl: 2rem;
+  --padding-xl: 1.4rem;
+  --padding-lg: 1rem;
+  --padding-med: 0.66rem;
+  --padding-sm: 0.33rem;
+  --font: Lato;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: calc(1rem + 1vw);
+  background: var(--page-color);
+  margin: 0px;
+  font-family: var(--font);
+}
+p, ol li, ul li {
+  font-size: calc(1rem + 1vw);
+  color: var(--soft-color);
+}
+/* -- ELEMENTS -- */
+.top {
+  background: var(--dark-color);
+  color: var(--page-color);
+  padding: calc(1rem + 2vw) calc(1rem + 2vw) calc(1rem + 2vw) calc(1rem + 2vw);
+}
+.top h1 {
+  font-size: calc(1rem + 5vw);
+  background: none;
+  margin: 0px;
+}
+.top p {
+  margin: 0px 1.5rem;
+  color: black;
+}
+h1 {
+  font-size: calc(1rem + 3.5vw);
+}
+h2 {
+  font-size: calc(1rem + 2.7vw);
+}
+h3 {
+  font-size: calc(1rem + 2.1vw);
+}
+h4 {
+  font-size: calc(1rem + 1.5vw);
+}
+h5 {
+  font-size: calc(1rem + 1vw);
+}
+h6 {
+  font-size: calc(1rem + 0.5vw);
+}
+h2, h3, h4, h5, h6 {
+  padding: var(--padding-lg);
+  margin: var(--margin-med) auto;
+  background: var(--page-color);
+  width: 100%;
+}
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+}
+table th {
+  background: var(--dark-color);
+  color: #fafafa;
+}
+table th, table td {
+  margin: 0px;
+  text-align: left;
+  padding: var(--padding-med);
+  border: 1px solid var(--dark-color);
+}
+table tr:nth-child(odd) {
+  background-color: var(--light-color);
+}
+table tr:nth-child(even) {
+  background-color: var(--light-color);
+}
+/* horizontal line with text label */
+.separator {
+  font-size: calc(1rem + 1vw);
+  color: var(--accent-color);
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+  margin: calc(2rem + 3vw) auto;
+}
+.separator::before, .separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid var(--dark-color);
+}
+.separator::before {
+  margin-right: 1rem;
+}
+.separator::after {
+  margin-left: 1rem;
+}
+/* -- GRID -- */
+.responsive_grid {
+  display: grid;
+  padding: 0px;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+/* -- UTILITY */
+.padding-lg {
+  padding: var(--padding-lg);
+}
+.padding-xl {
+  padding: var(--padding-xl);
+}
+.padding-xxl {
+  padding: var(--padding-xxl);
+}
+.padding-responsive {
+  padding: calc(1rem + 3vw);
+}
+.margin-none {
+  margin: none !important;
+}
+.margin-top-lg {
+  margin-top: var(--margin-lg);
+}
+.margin-top-xl {
+  margin-top: var(--margin-xl);
+}
+.margin-top-xxl {
+  margin-top: var(--margin-xxl);
+}
+.rounded {
+  border-radius: var(--rounded-radius);
+}
+.bordered {
+  border: 1px solid var(--medium-color);
+  border-radius: var(--border-radius);
+}

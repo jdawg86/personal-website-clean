@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page Info -->
+    <title>Jacinth Gudetti</title>
+    <meta name="author" content="Jacinth Gudetti">
+    <meta name="description" content="Starter Site">
+
+    <link rel="stylesheet" type="text/css" href="css/agile.css">
+  </head>
+
+  <body>
+
+    <div class='top'>
+      <h1> Guest Book </h1>
+      <p> Current Guests </p>
+    </div>
+
+    <div>
+      <form action="add_user" method="post">
+          <p>
+              <label for="firstName">First Name: </label>
+              <input type="text" name="firstName" id="firstName" required>
+          </p>
+          <p>
+              <label for="lastName">Last Name: </label>
+              <input type="text" name="lastName" id="lastName" required>
+          </p>
+          <p>
+              <label for="email">Email: </label>
+              <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+              <label for="userName">User Name: </label>
+              <input type="text" name="userName" id="userName" required>
+          </p>
+          <p>
+              <label for="pwd">password: </label>
+              <input type="text" name="pwd" id="pwd" required>
+          </p>
+          <p>
+              <input type="submit" value="Submit">
+          </p>
+      </form>
+    </div>
+  
+    <table class='margin-top-xl'>
+      <thead>
+        <tr>
+          <th class='large'> First Name </th>
+          <th class='large'> Last Name </th>
+          <th class='large'> Email </th>
+          <th class='large'> Comment </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for user in users %}
+        <tr>
+          <td> {{user[0]}} </td>
+          <td> {{user[1]}} </td>
+          <td> {{user[2]}} </td>
+          <td> {{user[3]}} </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <button><a href="/">back to home</a></li></button>
+
+    <div class='separator'> COMING SOON </div>
+
+  </body>
+</html>
