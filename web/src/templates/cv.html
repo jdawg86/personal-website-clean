@@ -14,15 +14,78 @@
     <link rel="stylesheet" type="text/css" href="css/agile.css">
   </head>
 
+  
   <body>
 
     <div class='top'>
-      <h1> CV </h1>
+      <h1> Jacinth Gudetti </h1>
+      <p> B.S. Computer Engineering, UCSD </p>
     </div>
 
-     <div class='separator'> COMING SOON </div>
+    <section class='padding-responsive'>
 
-     <button><a href='/'>Return Home</a></button>
+      <div class='separator'>Skills</div>
 
+      <table class='margin-top-xl'>
+        <thead>
+          <tr>
+            <th class='small'> Automotive Related </th>
+            <th class='medium'> Software </th>
+            <th class='large'> Hardware </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> Tensorflow + OpenCV </td>
+            <td> DonkeyCar AI Framework </td>
+            <td> Battery Management Systems </td>
+          </tr>
+          <tr>
+            <td> Testing (Jest, Cypress, GNU) </td>
+            <td> Programming (C/C++, Java, Python, HTML/CSS) </td>
+            <td> Assembly Language (ARM, MIPS) </td>
+          </tr>
+          <tr>
+            <td> PCB Software (KiCad, Eagle) </td>
+            <td> CAD Modelling (Solidworks, AutoCAD) </td>
+            <td> Analog Circuit Design </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class='separator'>Past Experiences</div>
+
+      <h2 class='bordered'> Autonomous Vehicle Development </h1>
+        <ul>
+          <li> Develop small scale autonomous vehicle that can navigate with GPS from point A to point B via pure pursuit using OpenCV and DonkeyCar AI running on Jetson Nano   </li>
+          <li> Train models with UCSD’s supercomputer GPU Cluster Computing via SSH using Python scripts </li>
+          <li> Used in conjunction with Arduino GPS modules and camera to go around objects in its path </li>
+        </ul>
+      <h2 class='bordered'> Research: TunnelCAM, Cultural Heritage Engineering Initiative </h2>
+        <ul>
+          <li> Developing a power distribution system for a 3D depth mapping camera system (including DSLR cameras, Intel NUC units with Celeron CPUs, and LED arrays) to be used in analyzing historic structures </li>
+          <li> Analyzed CPU processing power and specced newer generation NUC for image processing </li>
+          <li> Designing case in Solidworks to ensure thermal management, waterproofing and durability </li>
+        </ul>
+      <h2 class='bordered'> Testing Manager: Pomodoro App </h2>
+        <ul>
+          <li> Responsible for Jest and Cypress testing on a web application for a minimalistic Pomodoro timer </li>
+          <li> Developed initial timer boilerplate code to start the project and deployed the official site on Github </li>
+        </ul>
+      <h2 class='bordered'> Omnikey Bluetooth/GPS Electronics Project </h2>
+        <ul>
+          <li> Designed and built a motorized key container that dispense specific keys at specific locations at the press of a button with GPS enabled Android app and a stepper motor key mechanism </li>
+          <li> Responsible for electrical design for wiring the Arduino to 4 wire stepper motors, a pulldown resistor button and the Arduino code to communicate with the app and button logic </li>
+        </ul>
+      <h2 class='bordered'> Bluepark GPS/iOS Parking System </h2>
+        <ul>
+          <li> Developed a Bluetooth/iOS parking permit system to create a cheap parking permit system </li>
+          <li> Created the Firebase database to hold the user ids of currently parked users and JS code to edit users </li>
+        </ul>
+      <h2 class='bordered'> PEV Project UCSD </h2>
+        <ul>
+          <li> Part of electrical team for building an EV longboard </li>
+          <li> Used KiCAD software to translate an electrical BMS circuit designed by grad team members to a PCB design to be later printed </li>
+        </ul>
   </body>
 </html>

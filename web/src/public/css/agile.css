@@ -155,4 +155,5 @@ table tr:nth-child(even) {
 .bordered {
   border: 1px solid var(--medium-color);
   border-radius: var(--border-radius);
+  color: var(--accent-color);
 }
